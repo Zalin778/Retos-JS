@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="main.js"></script>
+    <title>Formulario de estudiantes</title>
 </head>
 <body>
-    
+    <h1>Formulario de estudiantes</h1>
+    <div class="formulario">
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+
+            <label for="promedio">Promedio:</label>
+            <input type="number" id="promedio">
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo">
+                <option value="">Selecionar</option>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+
+            <button onclick="agregarEstudiantes()">Agregar estudiante</button>
+        </form>
+
+        <div class="">
+            <ul id="estudiantes"></ul>
+        </div>
+        <p id="promedioMayor">Promedio Mayor: </p>
+        <p id="promedioMenor">Promedo Menor: </p>
+        <p id="promedioMasculino">Promedio Masculino: </p>
+        <p id="promedioFemenino">Promedio Femenino: </p>
+    </div>
 </body>
+    <script src="main.js"></script>
 </html>
