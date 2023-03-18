@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de estudiantes</title>
+    <title>Registo de estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Formulario de estudiantes</h1>
-    <div class="formulario">
-        <form action="#">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre">
+    <section class="container">
+        <div class="login">
+            <h1 class="login__titulo">Registo de estudiantes</h1>
+            <form action="#" class="login__form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
 
-            <label for="promedio">Promedio:</label>
-            <input type="number" id="promedio">
+                <label for="promedio">Promedio:</label>
+                <input type="number" id="promedio">
 
-            <label for="sexo">Sexo:</label>
-            <select id="sexo">
-                <option value="">Selecionar</option>
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-            </select>
+                <div class="login__select">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo">
+                        <option value="">Selecionar</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
 
-            <button onclick="agregarEstudiantes()">Agregar estudiante</button>
-        </form>
+                <button class="boton" onclick="agregarEstudiantes()">Agregar</button>
+            </form>
 
-        <div class="">
-            <ul id="estudiantes"></ul>
+            <p id="estudiantes"></p>
+
+            <div class="estadisticas">
+                <p>Promedio Mayor: <span id="promedioMayor"></span> </p>
+                <p>Promedo Menor: <span id="promedioMenor"></span> </p>
+                <p>Promedio acumulado masculino: <span id="promedioMasculino"></span> </p>
+                <p>Promedio acumulado femenino: <span id="promedioFemenino"></span> </p>
+                <p>Estudiantes fuera del programa: <span id="fp"></span></p>
+                <p>Estudiantes en periodo de prueba: <span id="pp"></span></p>
+                <p>Estudiantes en normal: <span id="normal"></span></p>
+                <p>Estudiantes en distinguido: <span id="distinguido"></span></p>
+            </div>
         </div>
-        <p id="promedioMayor">Promedio Mayor: </p>
-        <p id="promedioMenor">Promedo Menor: </p>
-        <p id="promedioMasculino">Promedio Masculino: </p>
-        <p id="promedioFemenino">Promedio Femenino: </p>
-    </div>
+    </section>
 </body>
     <script src="main.js"></script>
 </html>
