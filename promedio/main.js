@@ -1,3 +1,4 @@
+/*
 //Función anonima para evitar que la pagina se recague
 const evento = (event) => {
     event.preventDefault();
@@ -81,4 +82,4 @@ function agregarEstudiantes() {
     console.log(estudiantes);
 
 };
- agregarEstudiantes
+ agregarEstudiantes */
